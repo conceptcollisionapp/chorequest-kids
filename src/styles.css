@@ -1,0 +1,94 @@
+/* src/styles.css */
+@keyframes coinPop {
+  0% { transform: scale(0.8); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.app {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: system-ui, sans-serif;
+  background: linear-gradient(#f0f4ff, #e0e7ff);
+  min-height: 100vh;
+}
+
+h1 { text-align: center; color: #4f46e5; }
+
+.parent-toggle {
+  display: block;
+  margin: 0 auto 20px;
+  padding: 8px 16px;
+  background: #64748b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.parent-panel {
+  background: white;
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.parent-panel input {
+  margin: 4px;
+  padding: 8px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  font-size: 1.2rem;
+}
+
+.coin {
+  background: #fef08c;
+  padding: 8px 16px;
+  border-radius: 9999px;
+  animation: coinPop 0.3s ease;
+}
+
+.chore {
+  background: white;
+  padding: 16px;
+  margin: 8px 0;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: all 0.2s;
+}
+
+.chore.done {
+  background: #dcfce7;
+  text-decoration: line-through;
+}
+
+.big-reward {
+  background: #fef08c;
+  padding: 16px;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: bold;
+  margin: 20px 0;
+  animation: coinPop 0.6s ease;
+}
+
+.shop button {
+  display: block;
+  width: 100%;
+  margin: 8px 0;
+  padding: 12px;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
